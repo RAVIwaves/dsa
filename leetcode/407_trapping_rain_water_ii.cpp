@@ -94,11 +94,10 @@ int32_t main() {
     for(int i=0 ; i<testCases.size() ; i++) {
         int result = s.trapRainWater_v2(testCases[i]);
         cout << "Test Case " << i+1 << ": ";
-        if(result == expectedOutputs[i]) {
-            cout << "Passed" << endl;
-        } else {
-            cout << "Failed (Expected " << expectedOutputs[i] << ", Got " << result << ")" << endl;
-        }
+        if(result == expectedOutputs[i])
+            cout << "Passed\n";
+        else
+            cout << "Failed (Expected " << expectedOutputs[i] << ", Got " << result << ")\n";
     }
     return 0;
 }
